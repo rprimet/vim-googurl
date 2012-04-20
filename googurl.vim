@@ -54,8 +54,8 @@ def find_urls_vs()
   find_urls(:selection, :replace_selection)
 end
 
-def find_urls(get_operand, replace_operand)
-  search_term = send(get_operand)
+def find_urls(get_operator, replace_operator)
+  search_term = send(get_operator)
   reply = JSON.parse(read_uri(make_google_query_url(search_term)))
 
   if reply["responseStatus"] != 200
@@ -70,7 +70,7 @@ def find_urls(get_operand, replace_operand)
   end
   corrected_index = index - 1
 
-  send(replace_operand, "[#{search_term}](#{urls[corrected_index]})")
+  send(replace_operator, "[#{search_term}](#{urls[corrected_index]})")
 end
 
 def word_under_cursor()
