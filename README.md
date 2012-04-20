@@ -3,7 +3,7 @@ vim-googurl
 
 ## Description
 
-A [vim](http://www.vim.org/) plugin to easily create [Markdown](http://daringfireball.net/projects/markdown/) links from a [Google](http://www.google.com/) query. I wrote this script because I used to toggle back and forth between vim and my [web browser](http://en.wikipedia.org/wiki/Web_browser) when inserting [links](http://en.wikipedia.org/wiki/Link) into text.
+A [vim](http://www.vim.org/) plugin to easily create [Markdown](http://daringfireball.net/projects/markdown/) links from a [Google](http://www.google.com/) query. I wrote this script because I used to toggle back and forth between vim and my [web browser](http://en.wikipedia.org/wiki/Web_browser) when inserting [links](http://en.wikipedia.org/wiki/Hyperlink) into text.
 
 ## Install
 
