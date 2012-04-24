@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Vim-googurl : A vim plugin for creating Markdown links from a Google query" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Vim-googurl</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/roma1n/vim-googurl">Fork Me on GitHub</a>
+
+          <h1 id="project_title">Vim-googurl</h1>
+          <h2 id="project_tagline">A vim plugin for creating Markdown links from a Google query</h2>
+
+          <section id="downloads">
+            <a class="zip_download_link" href="https://github.com/roma1n/vim-googurl/zipball/master">Download this project as a .zip file</a>
+            <a class="tar_download_link" href="https://github.com/roma1n/vim-googurl/tarball/master">Download this project as a tar.gz file</a>
+          </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>vim-googurl</h1>
+
+<h2>Description</h2>
+
+<p>A <a href="http://www.vim.org/">vim</a> plugin to easily create <a href="http://daringfireball.net/projects/markdown/">Markdown</a> links from a <a href="http://www.google.com/">Google</a> query. I wrote this script because I used to toggle back and forth between vim and my <a href="http://en.wikipedia.org/wiki/Web_browser">web browser</a> when inserting links into text.</p>
+
+<h2>Install</h2>
+
+<p>Drop the file <code>googurl.vim</code> into your <code>~/.vim/plugin</code> directory.
+vim-googurl needs ruby support compiled in vim, and the following gems:</p>
+
+<ul>
+<li>json</li>
+</ul><h2>Use</h2>
+
+<p>The plugin will define a <code>FindUrls</code> command. Put your cursor over a word, call <code>:FindUrls</code> and you will be offered a set of choices drawn from Google.</p>
+
+<p>For instance, suppose that you want to link to <a href="https://github.com/">Github</a>, put the word <code>Github</code> under your cursor, and invoke <code>:FindUrls</code>. You will be prompted to choose the URL among several Google matches. Make a choice, and the link will appear as <code>[Github](https://github.com/)</code> in your markdown file.</p>
+
+<p>You may also query <a href="http://en.wikipedia.org/wiki/Uniform_resource_locator">urls</a> for the current visual selection by pressing 'u'.</p>
+
+<p></p>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Vim-googurl maintained by <a href="https://github.com/roma1n">roma1n</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-30546313-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+
+  </body>
+</html>
