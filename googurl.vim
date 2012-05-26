@@ -55,7 +55,7 @@ def find_urls_vs()
 end
 
 def confirm(text)
-  return VIM::evaluate("input(\"Search query: \", \"#{text}\")")
+  return VIM::evaluate("input(\"Search query? : \", \"#{text}\")")
 end
 
 def find_urls(get_operator, replace_operator)
